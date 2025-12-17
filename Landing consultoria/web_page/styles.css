@@ -1,0 +1,372 @@
+#navbar{
+    size: 100px;
+    background-color: aqua;
+}
+
+#logo{
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+#navbarSupportedContent{
+    font-family: sans-serif;
+    margin-left: 0;
+    font-size: 18px;
+}
+
+@media (min-width: 992px){
+    .navbar .navbar-collapse{
+        flex-grow: 0;   /* ancho auto, no ocupa todo */
+    }
+}
+
+@media (max-width: 991.98px){
+    /* que el menú se vea en móvil */
+    .navbar-collapse{
+        background: #fff;        /* opcional: color de fondo del dropdown */
+        padding: 8px 12px;
+    }
+}
+
+#navbarSupportedContent{ margin-left: 0 !important; }
+
+
+
+#nav-bar-txt{
+    color: black;
+}
+#nav-bar-txt:hover{
+    color: #0342a0;
+}
+
+#hero-section{
+    /* height: 500px;  <-- ELIMINAR */
+    min-height: 500px; /* Asegura un mínimo en escritorio */
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    padding: 20px 0; /* Espaciado superior e inferior */
+    position: relative; /* Necesario para posicionar middle-part */
+}
+
+#welcome {
+    /* Usamos las clases d-flex, justify-content-center, y align-items-center del HTML
+       para centrarlo todo. Aquí eliminamos el padding que lo movía. */
+    padding-left: 0 !important; 
+}
+
+#middle-part {
+    display: none; 
+    position: absolute;
+    top: 50%;
+    /* 50% para centrarlo horizontalmente */
+    left: 50%; 
+    /* transform: translate mueve el elemento a la izquierda la mitad de su ancho, 
+       así queda perfectamente centrado entre las dos columnas */
+    transform: translate(-50%, -50%); 
+    height: 300px; /* Tamaño que se ve bien en la captura */
+    width: 6px;
+    background-color: #0342a0;
+    z-index: 2;
+    border: solid #0342a0;
+    border-radius: 6px;
+}
+
+
+#welcome-carusel{
+    /* Reduce el padding para que el carrusel se vea más grande y centrado en la mitad derecha */  
+    padding: 20px 20px 20px 40px; /* Top 20px, Right 0, Bottom 20px, Left 40px */ 
+    
+}
+
+#welcome-carusel .carousel-text {
+    max-width: 500px;   /* Igual que el max-width de la imagen */
+    margin: 15px auto 0; /* Centrado debajo de la imagen */
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+
+
+/* Asegúrate de que el contenedor de la imagen no tenga una altura fija que la constriña */
+.carousel-img-container {
+    max-width: 500px;
+    height: 380px; /* IMPORTANTE: Deja que la altura se ajuste */
+    border-radius: 20px;
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    background: #fff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto visual */
+    margin: 0 auto;
+}
+
+.carousel-item img { /* Usamos selector de imagen dentro del carousel-item */
+    width: 100%;
+    height: 100%; /* IMPORTANTE: Mantener la proporción */
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.carousel-text {
+    font-family: sans-serif;
+    font-size: 16px; /* Reducimos el tamaño para asegurar que quepa en una o dos líneas */
+    text-align: center;
+    margin-top: 15px; /* Separación de la imagen */
+    padding: 0 10px; /* Pequeño padding horizontal para que el texto respire */
+}
+
+#welcome-text-1 {
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 15%;
+}
+
+#welcome-text-2 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #0342a0;
+}
+
+
+#welcome-text-2-1{
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+}
+
+
+#btns {
+    padding-left: 0;
+    padding-top: 30px;
+    /* Usamos la clase justify-content-center del HTML, aquí nos aseguramos de no romperlo */
+    display: flex; /* Asegura que la clase d-flex de Bootstrap funcione */
+    justify-content: center;
+}
+
+#btn-hero-know-more{
+    margin-top: 20px;
+    background-color: #0342a0;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    border-radius: 4px;;
+    text-decoration: none;
+    padding: 7px 10px;
+}
+
+#btn-hero-request-as{
+    margin-top: 20px;
+    background-color: white;
+    border-color: #0342a0;
+    color: #0342a0;
+    border-radius: 4px;
+    border-style: solid;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin-left: 12px;
+}
+
+#btn-hero-request-as:hover{
+    background-color: #0342a0;
+    color: white;
+}
+
+#btn-hero-know-more:hover{
+    background-color: white;
+    color: #0342a0;
+
+}
+
+/* Quitar los puntos de todas las listas ul */
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#sub_1{
+    font-family: Merriweather;
+    font-size: 40px;
+    color: #0342a0;
+
+}
+
+#sub_2{
+    font-family: Merriweather;
+    font-size: 40px;
+    color: #0342a0;
+}
+
+#sub_3{
+    font-family: Merriweather;
+    font-size: 30px;
+    color: black;
+}
+
+#txt_2{
+    font-family:  sans-serif;
+
+}
+
+#txt_3{
+    font-family:  sans-serif;
+}
+
+#imgs{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    width: 80px;
+    /* margin-left: 42%; <--- ELIMINAR */
+    margin-left: auto; /* <-- Usamos el centrado estándar de CSS */
+    margin-right: auto;
+}
+
+#serv_card{
+    background-color: transparent;
+    border: none;
+}
+
+#contact_tittle{
+    font-size: 60px;
+    font-family: Merriweather;
+    color: #0342a0;
+}
+
+#send_btn{
+    background-color: #0342a0;
+    color: white;
+    
+}
+
+
+#send_btn:hover{
+    background-color: white;
+    color: #0342a0;
+}
+
+
+
+@media (max-width: 767.98px){
+
+    #welcome {
+        align-items: center !important; 
+    }
+
+    /* En móvil, el hero section necesita más espacio */
+    #hero-section {
+        min-height: auto; /* Permite que se expanda */
+        padding: 20px 0;
+    }
+    
+    /* El carrusel se apila, así que no necesita padding horizontal excesivo */
+    #welcome-carusel {
+        padding: 20px; 
+        margin-top: 20px; 
+    }
+
+    /* El texto de bienvenida debe ser más pequeño en móvil */
+    #welcome-text-1{
+        font-size: 30px; 
+        padding-top: 20px; /* Aseguramos espacio superior */
+    }
+
+    #welcome-text-2, #welcome-text-2-1{
+        font-size: 20px;
+    }
+    
+    /* Centra los botones y elimina el padding excesivo */
+    #btns{
+        padding-left: 0;
+        padding-top: 10px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    /* La línea divisoria #middle-part debe ocultarse en móvil */
+    #middle-part {
+        display: none;
+    }
+    
+    /* Imágenes de la sección de servicios más pequeñas */
+    #imgs{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Ajuste de subtítulos de la sección About */
+    #sub_1, #sub_2{
+        font-size: 30px;
+    }
+    
+    #sub_3{
+        font-size: 24px;
+    }
+    
+    /* Contacto: Titulo más pequeño */
+    #contact_tittle {
+        font-size: 40px;
+    }
+
+    .carousel-item .carousel-text {
+        position: static; /* Aseguramos que el texto fluya normalmente */
+        margin-top: 10px; /* Pequeño margen entre imagen y texto */
+    }
+
+}
+
+
+/* --- Media Query para Tabletas (>= 768px) --- */
+
+@media (min-width: 768px) {
+    
+    /* Mostrar la línea divisoria para tabletas y escritorio */
+    #middle-part {
+        display: block; 
+    }
+}
+
+
+/* Nuevo estilo para el texto del carrusel sobre la imagen */
+/* Esto asegura que el texto sea legible y se posicione correctamente */
+/*
+
+
+*/
+.carousel-text-overlay {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    position: absolute; /* Posicionamiento sobre la imagen */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    margin: 0 10px; /* Un poco de margen en los lados */
+    border-radius: 5px;
+    
+    /* Asegúrate de que el contenedor principal sea 'relative' para el posicionamiento absoluto */
+    /* Lo haremos en el media query de móvil */
+}
+
+/* Ajuste de la imagen del carrusel para ocupar el espacio y permitir la superposición */
+#welcome-carusel .carousel-img-container {
+    height: auto; /* Dejamos que la altura se ajuste automáticamente */
+    position: relative; /* Esencial para que .carousel-text-overlay funcione */
+}
+
+/* El texto que estaba debajo ahora se usa solo para estilos */
+#welcome-carusel .carousel-text.mt-3 {
+    margin-top: 0 !important; /* Eliminamos el margen superior para que se pegue al fondo de la imagen */
+}
+
+
+
+
+
